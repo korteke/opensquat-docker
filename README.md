@@ -30,10 +30,16 @@ It does support some key features such as:
 As an opensource project, everyone's welcome to contribute.
 
 # Dockerized OpenSquat
-This is a dockerized version [openSquat](https://github.com/atenreiro/opensquat)
+This is a dockerized version of [openSquat](https://github.com/atenreiro/opensquat).   
+Kudos to @atenreiro / https://github.com/atenreiro
 
 ## Basic usage
-Modify the config/keywords.txt file according to your needs.
+Clone this repo.
+```
+git clone https://github.com/korteke/opensquat-docker.git
+```
+
+Modify the config/keywords.txt file according to your needs. Mount config -directory to container.
 ```bash
 docker run --rm -v "$(pwd)"/config:/app/config korteke/opensquat -k /app/config/keywords.txt
 ```
